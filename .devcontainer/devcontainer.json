@@ -52,13 +52,12 @@
 				//"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewer
 				//"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
 				//"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", 	// For Dark Viewer
-				// 
-				//"latex-workshop.latex.recipes": [
-				//	{
-				//		"name": "latexmkrc",
-				//		"tools": ["latexmk_rconly"]
-				//	}
-				//],
+				"latex-workshop.latex.recipes": [
+					{
+						"name": "latexmkrc",
+						"tools": ["latexmk_rconly"]
+					}
+				],
 				"latex-workshop.latexindent.path": "latexindent",
 				"latex-workshop.latexindent.args": [
 					"-c",
