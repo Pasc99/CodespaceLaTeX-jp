@@ -58,7 +58,7 @@ Wordのフォントフォルダを開き，ttcファイルコピーしてくだ�
 
 (すでに作成してあるので, ディレクトリを作成してマップファイルをコピーします。)
 ```terminal
-$ mkdir /usr/local/texlive/texmf-local/fonts/map/dvipdfmx/ms
+$ mkdir -p /usr/local/texlive/texmf-local/fonts/map/dvipdfmx/ms
 $ cp -i /workspaces/{レポジトリ名}/map/ptex-ms.map /usr/local/texlive/texmf-local/fonts/map/dvipdfmx/ms
 ```
 マップファイルが正常に設置しているかをcatで確認します。
@@ -67,6 +67,7 @@ $ cat /usr/local/texlive/texmf-local/fonts/map/dvipdfmx/ms/ptex-ms.map
 ```
 `texmf-local`にディレクトリを作成してフォントファイルをリンクします。
 ```
+$ mkdir -p /usr/local/texlive/texmf-local/fonts/truetype/ms
 $ ln -s /workspaces/{レポジトリ名}/map/msmincho.ttc /usr/local/texlive/texmf-local/fonts/truetype/ms/msmincho.ttc
 $ ln -s /workspaces/{レポジトリ名}/map/msgothic.ttc /usr/local/texlive/texmf-local/fonts/truetype/ms/msgothic.ttc
 ```
