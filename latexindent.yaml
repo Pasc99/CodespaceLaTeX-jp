@@ -1,0 +1,13 @@
+replacements:
+  -
+    this: '，'
+    that: ', '
+  -
+    this: '（'
+    that: ' ('
+  -
+    this: '）'
+    that: ') '
+  -
+    this: '、'
+    that: ', '

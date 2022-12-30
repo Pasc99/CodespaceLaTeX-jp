@@ -1,0 +1,31 @@
+\UseRawInputEncoding
+\documentclass[12pt]{jreport}
+\usepackage[dvipdfmx]{graphicx}
+
+% \AtBeginDvi{\special{pdf:mapfile map/msembed.map}}
+\AtBeginDvi{\special{pdf:mapfile map/IPAex_embed.map}}
+\AtBeginDvi{\special{pdf:mapfile map/dlbase14.map}}
+
+\begin{document}
+  \chapter{はじめに}
+    \section{概要}
+      これは \LaTeX が Visual Studio Code でビルドできるかどうかのテスト文章である。
+		\section{環境}
+			\begin{itemize}
+				\item devcontainer
+				\item Visual Studio Code
+				\item TeX Live 2021
+				\item LaTeX Workshop
+			\end{itemize}
+		\section{\LaTeXindentの動作確認}
+			\begin{itemize}
+				\item この文章は \LaTeX でビルドできた（）（））））
+				\item この文章は \LaTeX でビルドできた，，，，，，
+				\item この文章は \LaTeX でビルドできた、、、
+			\end{itemize}
+			セーブをすると自動でインデントされるはず。
+  \chapter{おわりに}
+    これが表示されていれば成功である。
+		\includegraphics*[width=8cm]{./images/photo.png}
+
+\end{document}

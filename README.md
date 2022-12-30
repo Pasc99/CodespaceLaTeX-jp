@@ -19,13 +19,10 @@ This is a LaTeX template for Codaspace that generates Japanese PDFs.
 3. **<> Code** > **CodeSpaces** > **Create Codespace on Main**を選択し，インストールは始めます。
    
    初回起動は時間がかかりますが，2回目以降は早くなります。
-4. LaTeX WorkshopのデフォルトBuildは日本語pdfの出力が何故かできません。
+4. latexindentを導入されています。texファイルをセーブする時点で自動でインデントが整えられます。好みの設定を入れたい場合は，`./latexindent.yaml`を編集してください。
+5. デフォルトのビルドで`.latexmkrc`は自動的に読み込まれていますので，設定を変更したい場合は直接に`./.latexmkrc`を編集してください。PDFファイルは`./OUT`のディレクトリに出力されます。
    
-   レシピの`latexmkrc`をクリックして，`./OUT`のディレクトリにPDFは出力されます。
-   
-   好みの設定を入れたい場合は，`./.latexmkrc`を編集してください。
-
-![latexmkrc](/images/latex.gif)
+6. texファイルの先頭にマジックコメントを入れることはできますが，デフォルトのレシピを無視して優先的に実行されるので，やっていることがわからない方にはおすすめしません。参照:[マジックコメント](https://texwiki.texjp.org/?Visual%20Studio%20Code%2FLaTeX#b7b858ba)。
 
 ## Grammarlyを使用しない場合
 は`./.devcontainer/devcontainer.json`に
@@ -37,7 +34,7 @@ This is a LaTeX template for Codaspace that generates Japanese PDFs.
         ]
   ```
   とコメントアウトしてください。
-## MS明朝, MSゴシックを使用したい場合
+## MS明朝，MSゴシックを使用したい場合
 ### 1. フォントファイルの準備
 フォントのttcファイルを`./map`に配置してください。
 
@@ -49,35 +46,35 @@ WordとかOffice系のアプリをお持ちのMACユーザーは，bashコマン
 ```bash
 $ open /Applications/Microsoft\ Word.app/Contents/Resources/Fonts
 ```
-Wordのフォントフォルダを開き，ttcファイルコピーしてください。
+Wordのフォントフォルダを開き，ttcファイルをコピーしてください。
 
 ### 2. フォントのインストール
-ここからCodespaceのターミナルを使用します。
+ここからはCodespaceのターミナルを使用します。
 
 まずは必要最低限のマップを作成します。
 
-(すでに作成してあるので, ディレクトリを作成してマップファイルをコピーします。)
+(すでに作成してあるので，ディレクトリを作成してマップファイルをコピーします。)
 ```terminal
 $ mkdir -p /usr/local/texlive/texmf-local/fonts/map/dvipdfmx/ms
 $ cp -i /workspaces/{レポジトリ名}/map/ptex-ms.map /usr/local/texlive/texmf-local/fonts/map/dvipdfmx/ms
 ```
-マップファイルが正常に設置しているかをcatで確認します。
+ここで，マップファイルが正常に設置しているかをcatで確認します。
 ```
 $ cat /usr/local/texlive/texmf-local/fonts/map/dvipdfmx/ms/ptex-ms.map
 ```
-`texmf-local`にディレクトリを作成してフォントファイルをリンクします。
+そして，`texmf-local`にディレクトリを作成してフォントファイルをリンクします。
 ```
 $ mkdir -p /usr/local/texlive/texmf-local/fonts/truetype/ms
 $ ln -s /workspaces/{レポジトリ名}/map/msmincho.ttc /usr/local/texlive/texmf-local/fonts/truetype/ms/msmincho.ttc
 $ ln -s /workspaces/{レポジトリ名}/map/msgothic.ttc /usr/local/texlive/texmf-local/fonts/truetype/ms/msgothic.ttc
 ```
-dvipdfmxで先程設置したマップファイルptex-ms.mapを使えるように設定します。
+次にdvipdfmxで先ほど設置したマップファイルptex-ms.mapを使えるように設定します。
 ```
 $ mktexlsr
 $ updmap-sys --setoption kanjiEmbed ms
 $ mktexlsr
 ```
-これでupdmap系のコマンドでptex-ms.mapを認識できる様になりました。
+これでupdmap系のコマンドでptex-ms.mapを認識できるようになりました。
 
 一応，確認のために
 ```

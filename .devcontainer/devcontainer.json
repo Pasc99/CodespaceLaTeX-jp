@@ -52,13 +52,24 @@
 				//"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewer
 				//"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
 				//"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", 	// For Dark Viewer
-				"latex-workshop.latex.recipes": [
-					{
-						"name": "latexmkrc",
-						"tools": ["latexmk_rconly"]
-					}
+				// 
+				//"latex-workshop.latex.recipes": [
+				//	{
+				//		"name": "latexmkrc",
+				//		"tools": ["latexmk_rconly"]
+				//	}
+				//],
+				"latex-workshop.latexindent.path": "latexindent",
+				"latex-workshop.latexindent.args": [
+					"-c",
+					"%DIR%/",
+					"%TMPFILE%",
+					"-l",
+					"%DIR%/latexindent.yaml",
+					"-r"
 				],
 				"editor.formatOnSave": true,
+				"editor.defaultFormatter": "James-Yu.latex-workshop",
 				"latex-workshop.latex.pdfWatch.delay": 500,
 				"latex-workshop.latex.watch.delay": 500,
 				"latex-workshop.codespaces.portforwarding.openDelay": 20000,
