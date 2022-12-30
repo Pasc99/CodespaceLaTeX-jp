@@ -1,0 +1,216 @@
+%
+% This is a copy of
+% (1) ptex-ms.map
+% (2) uptex-ms.map
+% (3) otf-ms.map
+% (4) otf-up-ms.map
+% (5) otf-cktx.map
+% by Norbert Preining and H. Kitagawa,
+% which are in TeX Live
+%
+% ptex-ms.map
+
+% 2022/11/20 K. Edo フォントにipaexを用いるように変更
+
+rml	H	:0:ipaexm.ttf
+rmlv	V	:0:ipaexm.ttf
+gbm	H	:0:ipaexg.ttf
+gbmv	V	:0:ipaexg.ttf
+%
+% uptex-ms.map
+urml	UniJIS-UTF16-H	:0:ipaexm.ttf
+urmlv	UniJIS-UTF16-V	:0:ipaexm.ttf
+ugbm	UniJIS-UTF16-H	:0:ipaexg.ttf
+ugbmv	UniJIS-UTF16-V	:0:ipaexg.ttf
+uprml-h	UniJIS-UTF16-H	:0:ipaexm.ttf
+uprml-v	UniJIS-UTF16-V	:0:ipaexm.ttf
+upgbm-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+upgbm-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+uprml-hq	UniJIS-UCS2-H	:0:ipaexm.ttf
+upgbm-hq	UniJIS-UCS2-H	:0:ipaexg.ttf
+%
+% otf-ms.map
+% TEXT, 90JIS
+hminl-h	H	:0:ipaexm.ttf
+hminl-v	V	:0:ipaexm.ttf
+hminr-h	H	:0:ipaexm.ttf
+hminr-v	V	:0:ipaexm.ttf
+hminb-h	H	:0:ipaexm.ttf
+hminb-v	V	:0:ipaexm.ttf
+hgothr-h	H	:0:ipaexg.ttf
+hgothr-v	V	:0:ipaexg.ttf
+hgothb-h	H	:0:ipaexg.ttf
+hgothb-v	V	:0:ipaexg.ttf
+hgotheb-h	H	:0:ipaexg.ttf
+hgotheb-v	V	:0:ipaexg.ttf
+hmgothr-h	H	:0:ipaexg.ttf
+hmgothr-v	V	:0:ipaexg.ttf
+
+% TEXT, JIS04
+hminln-h	H	:0:ipaexm.ttf
+hminln-v	V	:0:ipaexm.ttf
+hminrn-h	H	:0:ipaexm.ttf
+hminrn-v	V	:0:ipaexm.ttf
+hminbn-h	H	:0:ipaexm.ttf
+hminbn-v	V	:0:ipaexm.ttf
+hgothrn-h	H	:0:ipaexg.ttf
+hgothrn-v	V	:0:ipaexg.ttf
+hgothbn-h	H	:0:ipaexg.ttf
+hgothbn-v	V	:0:ipaexg.ttf
+hgothebn-h	H	:0:ipaexg.ttf
+hgothebn-v	V	:0:ipaexg.ttf
+hmgothrn-h	H	:0:ipaexg.ttf
+hmgothrn-v	V	:0:ipaexg.ttf
+
+% CID
+otf-cjml-h	Identity-H	:0:ipaexm.ttf/AJ16
+otf-cjml-v	Identity-V	:0:ipaexm.ttf/AJ16
+otf-cjmr-h	Identity-H	:0:ipaexm.ttf/AJ16
+otf-cjmr-v	Identity-V	:0:ipaexm.ttf/AJ16
+otf-cjmb-h	Identity-H	:0:ipaexm.ttf/AJ16
+otf-cjmb-v	Identity-V	:0:ipaexm.ttf/AJ16
+otf-cjgr-h	Identity-H	:0:ipaexg.ttf/AJ16
+otf-cjgr-v	Identity-V	:0:ipaexg.ttf/AJ16
+otf-cjgb-h	Identity-H	:0:ipaexg.ttf/AJ16
+otf-cjgb-v	Identity-V	:0:ipaexg.ttf/AJ16
+otf-cjge-h	Identity-H	:0:ipaexg.ttf/AJ16
+otf-cjge-v	Identity-V	:0:ipaexg.ttf/AJ16
+otf-cjmgr-h	Identity-H	:0:ipaexg.ttf/AJ16
+otf-cjmgr-v	Identity-V	:0:ipaexg.ttf/AJ16
+
+% Unicode 90JIS
+otf-ujml-h	UniJIS-UTF16-H	:0:ipaexm.ttf
+otf-ujml-v	UniJIS-UTF16-V	:0:ipaexm.ttf
+otf-ujmr-h	UniJIS-UTF16-H	:0:ipaexm.ttf
+otf-ujmr-v	UniJIS-UTF16-V	:0:ipaexm.ttf
+otf-ujmb-h	UniJIS-UTF16-H	:0:ipaexm.ttf
+otf-ujmb-v	UniJIS-UTF16-V	:0:ipaexm.ttf
+otf-ujgr-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+otf-ujgr-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+otf-ujgb-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+otf-ujgb-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+otf-ujge-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+otf-ujge-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+otf-ujmgr-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+otf-ujmgr-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+
+% Unicode JIS04
+otf-ujmln-h	UniJIS2004-UTF16-H	:0:ipaexm.ttf
+otf-ujmln-v	UniJIS2004-UTF16-V	:0:ipaexm.ttf
+otf-ujmrn-h	UniJIS2004-UTF16-H	:0:ipaexm.ttf
+otf-ujmrn-v	UniJIS2004-UTF16-V	:0:ipaexm.ttf
+otf-ujmbn-h	UniJIS2004-UTF16-H	:0:ipaexm.ttf
+otf-ujmbn-v	UniJIS2004-UTF16-V	:0:ipaexm.ttf
+otf-ujgrn-h	UniJIS2004-UTF16-H	:0:ipaexg.ttf
+otf-ujgrn-v	UniJIS2004-UTF16-V	:0:ipaexg.ttf
+otf-ujgbn-h	UniJIS2004-UTF16-H	:0:ipaexg.ttf
+otf-ujgbn-v	UniJIS2004-UTF16-V	:0:ipaexg.ttf
+otf-ujgen-h	UniJIS2004-UTF16-H	:0:ipaexg.ttf
+otf-ujgen-v	UniJIS2004-UTF16-V	:0:ipaexg.ttf
+otf-ujmgrn-h	UniJIS2004-UTF16-H	:0:ipaexg.ttf
+otf-ujmgrn-v	UniJIS2004-UTF16-V	:0:ipaexg.ttf
+%
+% otf-up-ms.map
+% TEXT, 90JIS
+uphminl-h	UniJIS-UTF16-H	:0:ipaexm.ttf
+uphminl-v	UniJIS-UTF16-V	:0:ipaexm.ttf
+uphminr-h	UniJIS-UTF16-H	:0:ipaexm.ttf
+uphminr-v	UniJIS-UTF16-V	:0:ipaexm.ttf
+uphminb-h	UniJIS-UTF16-H	:0:ipaexm.ttf
+uphminb-v	UniJIS-UTF16-V	:0:ipaexm.ttf
+uphgothr-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+uphgothr-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+uphgothb-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+uphgothb-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+uphgotheb-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+uphgotheb-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+uphmgothr-h	UniJIS-UTF16-H	:0:ipaexg.ttf
+uphmgothr-v	UniJIS-UTF16-V	:0:ipaexg.ttf
+% JISX 0213:2004
+uphminln-h      UniJIS2004-UTF16-H :0:ipaexm.ttf
+uphminln-v      UniJIS2004-UTF16-V :0:ipaexm.ttf
+uphminrn-h      UniJIS2004-UTF16-H :0:ipaexm.ttf
+uphminrn-v      UniJIS2004-UTF16-V :0:ipaexm.ttf
+uphminbn-h      UniJIS2004-UTF16-H :0:ipaexm.ttf
+uphminbn-v      UniJIS2004-UTF16-V :0:ipaexm.ttf
+uphgothrn-h     UniJIS2004-UTF16-H :0:ipaexg.ttf
+uphgothrn-v     UniJIS2004-UTF16-V :0:ipaexg.ttf
+uphgothbn-h     UniJIS2004-UTF16-H :0:ipaexg.ttf
+uphgothbn-v     UniJIS2004-UTF16-V :0:ipaexg.ttf
+uphgothebn-h    UniJIS2004-UTF16-H :0:ipaexg.ttf
+uphgothebn-v    UniJIS2004-UTF16-V :0:ipaexg.ttf
+uphmgothrn-h    UniJIS2004-UTF16-H :0:ipaexg.ttf
+uphmgothrn-v    UniJIS2004-UTF16-V :0:ipaexg.ttf
+%
+% otf cktx
+%
+otf-utmr-h  UniCNS-UCS2-H  AdobeMingStd-Light.otf
+otf-utmr-v  UniCNS-UCS2-V  AdobeMingStd-Light.otf
+otf-utgr-h  UniCNS-UCS2-H  AdobeFanHeitiStd-Bold.otf
+otf-utgr-v  UniCNS-UCS2-V  AdobeFanHeitiStd-Bold.otf
+otf-ucmr-h  UniGB-UCS2-H   AdobeSongStd-Light.otf
+otf-ucmr-v  UniGB-UCS2-V   AdobeSongStd-Light.otf
+otf-ucgr-h  UniGB-UCS2-H   AdobeHeitiStd-Regular.otf
+otf-ucgr-v  UniGB-UCS2-V   AdobeHeitiStd-Regular.otf
+otf-ukmr-h  UniKS-UCS2-H   AdobeMyungjoStd-Medium.otf
+otf-ukmr-v  UniKS-UCS2-V   AdobeMyungjoStd-Medium.otf
+otf-ukgr-h  UniKS-UCS2-H   AdobeGothicStd-Bold.otf
+otf-ukgr-v  UniKS-UCS2-V   AdobeGothicStd-Bold.otf
+%
+% otf cktx (cid)
+%
+otf-ctmr-h  Identity-H     AdobeMingStd-Light.otf
+otf-ctmr-v  Identity-V     AdobeMingStd-Light.otf
+otf-ctgr-h  Identity-H     AdobeFanHeitiStd-Bold.otf
+otf-ctgr-v  Identity-V     AdobeFanHeitiStd-Bold.otf
+otf-ccmr-h  Identity-H     AdobeSongStd-Light.otf
+otf-ccmr-v  Identity-V     AdobeSongStd-Light.otf
+otf-ccgr-h  Identity-H     AdobeHeitiStd-Regular.otf
+otf-ccgr-v  Identity-V     AdobeHeitiStd-Regular.otf
+otf-ckmr-h  Identity-H     AdobeMyungjoStd-Medium.otf
+otf-ckmr-v  Identity-V     AdobeMyungjoStd-Medium.otf
+otf-ckgr-h  Identity-H     AdobeGothicStd-Bold.otf
+otf-ckgr-v  Identity-V     AdobeGothicStd-Bold.otf
+%
+% uptex cktx
+%
+upmsl-h     UniCNS-UTF16-H AdobeMingStd-Light.otf
+upmsl-v     UniCNS-UTF16-V AdobeMingStd-Light.otf
+upmhm-h     UniCNS-UTF16-H AdobeFanHeitiStd-Bold.otf
+upmhm-v     UniCNS-UTF16-V AdobeFanHeitiStd-Bold.otf
+upstsl-h    UniGB-UTF16-H  AdobeSongStd-Light.otf
+upstsl-v    UniGB-UTF16-V  AdobeSongStd-Light.otf
+upstht-h    UniGB-UTF16-H  AdobeHeitiStd-Regular.otf
+upstht-v    UniGB-UTF16-V  AdobeHeitiStd-Regular.otf
+uphysmjm-h  UniKS-UTF16-H  AdobeMyungjoStd-Medium.otf
+uphysmjm-v  UniKS-UTF16-V  AdobeMyungjoStd-Medium.otf
+uphygt-h    UniKS-UTF16-H  AdobeGothicStd-Bold.otf
+uphygt-v    UniKS-UTF16-V  AdobeGothicStd-Bold.otf
+%
+% utf
+%
+unijmin-h     UniJIS-UTF16-H    :0:ipaexm.ttf
+unijmin-v     UniJIS-UTF16-V    :0:ipaexm.ttf
+unijgoth-h    UniJIS-UTF16-H    :0:ipaexg.ttf
+unijgoth-v    UniJIS-UTF16-V    :0:ipaexg.ttf
+
+cidmin-h      Identity-H        :0:ipaexm.ttf/AJ16
+cidmin-v      Identity-V        :0:ipaexm.ttf/AJ16
+cidgoth-h     Identity-H        :0:ipaexg.ttf/AJ16
+cidgoth-v     Identity-V        :0:ipaexg.ttf/AJ16
+
+hmr           H                 :0:ipaexm.ttf
+hmrv          V                 :0:ipaexm.ttf
+hkb           H                 :0:ipaexg.ttf
+hkbv          V                 :0:ipaexg.ttf
+%
+% misc: ttfgid
+ugidmin-h   Identity-H ipaexm.ttf/I 
+ugidmin-v   Identity-V ipaexm.ttf/I
+ugidgoth-h  Identity-H ipaexg.ttf/I
+ugidgoth-v  Identity-V ipaexg.ttf/I
+
+gidmin-h   Identity-H ipam.ttf/I 
+gidmin-v   Identity-V ipam.ttf/I
+gidgoth-h  Identity-H ipag.ttf/I
+gidgoth-v  Identity-V ipag.ttf/I
